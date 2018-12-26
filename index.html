@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Que comienze el Juego (0_0)</title>
+</head>
+<link rel="stylesheet" type="text/css" href="juego.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1 id="level" class="level" >Nivel: 0</h1>
+        <h1 id="score" class="score" >Puntuación: 0</h1>
+        <h1 id="top-score" class="top-score" >Puntuación Máxima: 0</h1>
+    </div>
+    <div class="gameboard">
+        <div id="celeste" class="color celeste left" data-color="celeste">
+            <div class="borde borde-celeste"></div>
+        </div>
+        <div id="violeta" class="color violeta right" data-color="violeta">
+            <div class="borde borde-violeta"></div>
+        </div>
+        <div id="naranja" class="color naranja left" data-color="naranja">
+            <div class="borde borde-naranja"></div>
+        </div>
+        <div id="verde" class="color verde right" data-color="verde">
+            <div class="borde borde-verde"></div>
+        </div>
+        <button id="btnEmpezar" class="btn-start animation show" onclick="empezarJuego()">Empezar a jugar!</button>
+    </div>
+    <!-- Usar un cdn implica que buscara al servidor mas cercano a nosotros para enviarnos la libreria 
+    sin embargo esto jamas superarar tenerla descargada en tu propio server-->
+
+    <!-- <scrip src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></scrip> -->
+    
+    <script src="sweetalert.min.js"></script>
+    <script src="juego.js"></script>
+
+    
+</body>
+</html>
