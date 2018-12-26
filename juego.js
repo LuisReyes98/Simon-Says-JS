@@ -135,7 +135,8 @@ class Juego{
             this.subLevel++
             this.score += 100
             this.setScore()
-            if (this.level === this.subLevel) {                
+            if (this.level === this.subLevel) {  
+                this.level++              
                 if (this.level === (LAST_LEVEL + 1)) {
                     //Ganó
                     this.wonGame()
@@ -153,12 +154,12 @@ class Juego{
     finishedLevel(){
         swal({
             icon: "success",
-            title: "Nivel " + this.level + " Completado",
+            title: "Nivel " + (this.level - 1) + " Completado",
             button: {
-                text: "Seguir: Nivel " + (this.level + 1),
+                text: "Seguir: Nivel " + (this.level),
             },
         }).then(() => {
-            this.level++
+            
             this.score += 500
             this.setLevelTitle()
             this.setScore()
