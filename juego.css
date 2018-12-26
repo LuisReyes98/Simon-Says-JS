@@ -17,6 +17,13 @@ body {
     justify-content: center;
     height: 100px;
 }  
+
+.source-code{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
 .level , .score , .top-score{
     padding: 10px;
 }
